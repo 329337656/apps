@@ -1,0 +1,9 @@
+<view bindtap="__e" class="cu-form-group data-v-5067f302" data-event-opts="{{[ [ 'tap',[ [ 'showPicker',['$event'] ] ] ] ]}}">
+    <view class="cu-form-group data-v-5067f302">
+        <u--input bind:__l="__l" border="none" class="data-v-5067f302" customStyle="background: #fff;" disabled="{{true}}" placeholder="请选择" placeholderStyle="color: #666;font-size: 30rpx " value="{{label}}" vueId="37e3f657-1"></u--input>
+    </view>
+    <view class="data-v-5067f302" style="float:right;">
+        <u-icon bind:__l="__l" class="data-v-5067f302" name="arrow-right" slot="right" vueId="37e3f657-2"></u-icon>
+        <u-picker bind:__l="__l" bind:cancel="__e" bind:change="__e" bind:confirm="__e" bind:input="__e" class="data-v-5067f302 vue-ref" columns="{{columns}}" data-event-opts="{{[ [ '^change',[ ['areaChange'] ] ],[ '^confirm',[ ['choose'] ] ],[ '^cancel',[ ['e0'] ] ],[ '^input',[ [ '__set_model',[ '','real','$event',[] ] ] ] ] ]}}" data-ref="areaPicker" defaultIndex="{{defaultIndex}}" disabled="{{disabled}}" keyName="label" show="{{show}}" value="{{real}}" vueId="37e3f657-3"></u-picker>
+    </view>
+</view>

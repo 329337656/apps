@@ -1,0 +1,58 @@
+<view class="{{['pages','data-v-7645555c',gongjiri?'gongjiri':'']}}">
+    <scroll-view bindscrolltolower="__e" bindscrolltoupper="__e" class="data-v-7645555c" data-event-opts="{{[ [ 'scrolltolower',[ [ 'onReachBottom2',['$event'] ] ] ],[ 'scrolltoupper',[ [ 'onPullDownRefresh2',['$event'] ] ] ] ]}}" scrollWithAnimation="{{true}}" scrollY="true" style="height:94vh;">
+        <view class="labels data-v-7645555c" style="{{'top:'+topJl+'px'+';'}}">雄安新区机动车业务办理预约平台</view>
+        <view class="top data-v-7645555c">
+            <view class="swiper-box data-v-7645555c">
+                <swiper class="swiper data-v-7645555c">
+                    <swiper-item class="data-v-7645555c" wx:for="{{swipers}}" wx:key="index">
+                        <image class="data-v-7645555c" src="{{''+item.carouselChart}}" style="width:100%;height:100%;"></image>
+                    </swiper-item>
+                </swiper>
+            </view>
+            <view class="label data-v-7645555c">
+                <view bindtap="__e" class="left data-v-7645555c" data-event-opts="{{[ [ 'tap',[ [ 'open_sqzb',['$event'] ] ] ] ]}}">
+                    <view class="left-label data-v-7645555c">我要预约</view>
+                    <image mode class="data-v-7645555c" src="../../static/home/mid_left.png" style="width:90rpx;height:90rpx;"></image>
+                </view>
+                <view bindtap="__e" class="right data-v-7645555c" data-event-opts="{{[ [ 'tap',[ ['open_history'] ] ] ]}}">
+                    <view class="left-labels data-v-7645555c">预约信息</view>
+                    <image mode class="data-v-7645555c" src="../../static/home/mid_right.png" style="width:90rpx;height:90rpx;"></image>
+                </view>
+            </view>
+        </view>
+        <view class="result data-v-7645555c">
+            <view bindtap="__e" class="left data-v-7645555c" data-event-opts="{{[ [ 'tap',[ ['open_standard'] ] ] ]}}">
+                <image mode class="data-v-7645555c" src="../../static/home/slbz.png" style="width:180rpx;height:180rpx;padding:30rpx 27rpx;margin-top:40rpx;"></image>
+                <view class="data-v-7645555c" style="font-size:34rpx;font-weight:bold;color:#333D3C;">管理办法</view>
+            </view>
+            <view class="right data-v-7645555c">
+                <view bindtap="__e" class="unit data-v-7645555c" data-event-opts="{{[ [ 'tap',[ ['open_bllc'] ] ] ]}}">
+                    <image mode class="data-v-7645555c" src="../../static/home/bllc.png" style="width:140rpx;height:140rpx;padding:30rpx;"></image>
+                    <view class="data-v-7645555c" style="font-size:28rpx;font-weight:bold;color:#333333;">办理流程</view>
+                </view>
+                <view bindtap="__e" class="unit data-v-7645555c" data-event-opts="{{[ [ 'tap',[ ['open_zczx'] ] ] ]}}">
+                    <image mode class="data-v-7645555c" src="../../static/home/zczx.png" style="width:140rpx;height:140rpx;padding:30rpx;"></image>
+                    <view class="data-v-7645555c" style="font-size:28rpx;font-weight:bold;color:#333333;">政策解读</view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom data-v-7645555c">
+            <view class="title data-v-7645555c">
+                <view class="left data-v-7645555c"></view>
+                <view class="right data-v-7645555c">申请材料</view>
+            </view>
+            <view class="data-v-7645555c" style="background:#f5f5f5;">
+                <view class="labelss data-v-7645555c">
+                    <label bindtap="__e" class="{{['_span','data-v-7645555c',tabKey===1?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'tabClick',[1] ] ] ] ]}}">办理类型</label>
+                    <label bindtap="__e" class="{{['_span','data-v-7645555c',tabKey===3?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'tabClick',[3] ] ] ] ]}}">身份类型</label>
+                    <label bindtap="__e" class="{{['_span','data-v-7645555c',tabKey===2?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'tabClick',[2] ] ] ] ]}}">工作时间</label>
+                </view>
+                <view class="data-v-7645555c" style="background:#fff;padding-bottom:30rpx;">
+                    <view class="contentss data-v-7645555c" style="padding-top:20rpx;padding-bottom:20rpx;">
+                        <rich-text class="data-v-7645555c" nodes="{{info.details}}"></rich-text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

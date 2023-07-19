@@ -1,0 +1,4 @@
+<view>
+    <u-upload bind:__l="__l" bind:afterRead="__e" bind:delete="__e" data-event-opts="{{[ [ '^afterRead',[ ['afterRead'] ] ],[ '^delete',[ ['deletePic'] ] ] ]}}" disabled="{{disabled}}" fileList="{{fileList}}" maxCount="1" name="image" uploadIcon="plus" uploadText="{{text}}" vueId="acc3f83a-1"></u-upload>
+    <helang-compress bind:__l="__l" class="vue-ref" data-ref="helangCompress" vueId="acc3f83a-2"></helang-compress>
+</view>

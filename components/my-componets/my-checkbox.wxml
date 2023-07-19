@@ -1,0 +1,18 @@
+<view bindtap="__e" class="cu-form-group data-v-3bc66a1c" data-event-opts="{{[ [ 'tap',[ [ 'showPicker',['$event'] ] ] ] ]}}">
+    <view class="cu-form-group data-v-3bc66a1c">
+        <u--input bind:__l="__l" bind:input="__e" border="none" class="data-v-3bc66a1c" customStyle="background: #fff;" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','title','$event',[] ] ] ] ] ]}}" disabled="{{true}}" placeholder="请选择" placeholderStyle="color: #666;font-size: 28rpx " value="{{title}}" vueId="ce86bc3e-1"></u--input>
+    </view>
+    <view class="data-v-3bc66a1c" style="float:right;">
+        <u-icon bind:__l="__l" class="data-v-3bc66a1c" name="arrow-right" slot="right" vueId="ce86bc3e-2"></u-icon>
+        <u-popup bind:__l="__l" bind:close="__e" class="data-v-3bc66a1c" data-event-opts="{{[ [ '^close',[ ['e0'] ] ] ]}}" show="{{show}}" vueId="ce86bc3e-3" vueSlots="{{['default']}}">
+            <view class="data-v-3bc66a1c" style="padding:40rpx;">
+                <view class="data-v-3bc66a1c" style="min-height:600rpx;padding-bottom:40rpx;">
+                    <u-checkbox-group bind:__l="__l" bind:input="__e" class="data-v-3bc66a1c" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','real','$event',[] ] ] ] ] ]}}" placement="column" value="{{real}}" vueId="{{'ce86bc3e-4'+','+'ce86bc3e-3'}}" vueSlots="{{['default']}}">
+                        <u-checkbox bind:__l="__l" class="data-v-3bc66a1c" customStyle="{{marginBottom:'8px'}}" label="{{item.label}}" name="{{item.value}}" vueId="{{'ce86bc3e-5-'+index+','+'ce86bc3e-4'}}" wx:for="{{columns}}" wx:key="index"></u-checkbox>
+                    </u-checkbox-group>
+                </view>
+                <u-button bind:__l="__l" bind:click="__e" class="data-v-3bc66a1c" customStyle="width:45%" data-event-opts="{{[ [ '^click',[ ['choose'] ] ] ]}}" size="small" text="确定" type="primary" vueId="{{'ce86bc3e-6'+','+'ce86bc3e-3'}}"></u-button>
+            </view>
+        </u-popup>
+    </view>
+</view>

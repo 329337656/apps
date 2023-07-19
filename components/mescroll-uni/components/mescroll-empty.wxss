@@ -1,0 +1,39 @@
+.mescroll-empty {
+    box-sizing: border-box;
+    padding: 60% 50rpx;
+    text-align: center;
+    width: 100%;
+}
+
+.mescroll-empty.empty-fixed {
+    left: 0;
+    position: absolute;
+    top: 100rpx;
+    z-index: 99;
+}
+
+.mescroll-empty .empty-icon {
+    height: 280rpx;
+    width: 280rpx;
+}
+
+.mescroll-empty .empty-tip {
+    color: grey;
+    font-size: 24rpx;
+    margin-top: -80rpx;
+}
+
+.mescroll-empty .empty-btn {
+    border: 1rpx solid #e04b28;
+    border-radius: 60rpx;
+    color: #e04b28;
+    display: inline-block;
+    font-size: 28rpx;
+    margin-top: 40rpx;
+    min-width: 200rpx;
+    padding: 18rpx;
+}
+
+.mescroll-empty .empty-btn:active {
+    opacity: .75;
+}

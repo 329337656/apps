@@ -1,0 +1,15 @@
+<view>
+    <scroll-view class="page" scrollY="{{true}}">
+        <cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/cjkz2329.jpg" bind:__l="__l" vueId="692ed274-1" vueSlots="{{['content']}}">
+            <view slot="content">
+                <image mode="aspectFill" src="/static/cjkz.png" style="width:240rpx;height:60rpx;"></image>
+            </view>
+        </cu-custom>
+        <view class="cu-card">
+            <view bindtap="__e" class="cu-item bg-img shadow-blur" data-event-opts="{{[ [ 'tap',[ [ 'toChild',['$event'] ] ] ] ]}}" data-url="{{item.url}}" style="{{'background-image:'+'url('+item.img+')'+';'}}" wx:for="{{list}}" wx:key="index">
+                <view class="cardTitle">{{''+item.title+''}}</view>
+            </view>
+        </view>
+        <view class="cu-tabbar-height"></view>
+    </scroll-view>
+</view>

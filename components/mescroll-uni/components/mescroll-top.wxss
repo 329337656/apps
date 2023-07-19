@@ -1,0 +1,25 @@
+.mescroll-totop {
+    border-radius: 50%;
+    bottom: 120rpx;
+    height: auto;
+    margin-bottom: 0;
+    opacity: 0;
+    position: fixed!important;
+    right: 20rpx;
+    transition: opacity .5s;
+    width: 72rpx;
+    z-index: 9990;
+}
+
+.mescroll-safe-bottom {
+    margin-bottom: calc(0px + env(safe-area-inset-bottom));
+}
+
+.mescroll-totop-in {
+    opacity: 1;
+}
+
+.mescroll-totop-out {
+    opacity: 0;
+    pointer-events: none;
+}

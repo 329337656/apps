@@ -1,0 +1,9 @@
+<view>
+    <scroll-view class="{{['page',modalName!=null?'show':'']}}" scrollY="{{modalName==null}}">
+        <cu-custom bgColor="bg-gradual-pink" bind:__l="__l" isBack="{{true}}" vueId="72925595-1" vueSlots="{{['backText','content']}}">
+            <view slot="backText">{{back}}</view>
+            <view slot="content">{{title}}</view>
+        </cu-custom>
+        <slot></slot>
+    </scroll-view>
+</view>

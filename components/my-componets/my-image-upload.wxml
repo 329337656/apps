@@ -1,0 +1,19 @@
+<view class="margin-top">
+    <view class="cu-bar bg-white ">
+        <view class="action">{{''+label+''}}</view>
+        <view class="action">{{''+$root.g0+'/'+maxImg+''}}</view>
+    </view>
+    <view class="cu-form-group">
+        <view class="grid col-4 grid-square flex-sub">
+            <view bindtap="__e" class="bg-img" data-event-opts="{{[ [ 'tap',[ [ 'ViewImage',['$event'] ] ] ] ]}}" data-url="{{imgList[index]}}" wx:for="{{imgList}}" wx:key="index">
+                <image mode="aspectFill" src="{{imgList[index]}}"></image>
+                <view catchtap="__e" class="cu-tag bg-red" data-event-opts="{{[ [ 'tap',[ [ 'DelImg',['$event'] ] ] ] ]}}" data-index="{{index}}">
+                    <text class="cuIcon-close"></text>
+                </view>
+            </view>
+            <view bindtap="__e" class="solids" data-event-opts="{{[ [ 'tap',[ [ 'ChooseImage',['$event'] ] ] ] ]}}" wx:if="{{$root.g1<maxImg}}">
+                <text class="cuIcon-cameraadd"></text>
+            </view>
+        </view>
+    </view>
+</view>

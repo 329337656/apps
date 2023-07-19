@@ -1,0 +1,70 @@
+<view class="table data-v-0ef26e70">
+    <view class="bmi-bottom-table data-v-0ef26e70" style="background:#FFFFFF;overflow-y:scroll;min-height:500rpx;">
+        <scroll-view class="data-v-0ef26e70" scrollX="{{true}}">
+            <view class="tab_box data-v-0ef26e70">
+                <view class="bmi-bottom-theader data-v-0ef26e70">
+                    <view class="bmi-bottom-tr data-v-0ef26e70">
+                        <view class="bmi-bottom-th data-v-0ef26e70">项目名称</view>
+                        <view class="bmi-bottom-th data-v-0ef26e70">项目代码</view>
+                        <view class="bmi-bottom-th data-v-0ef26e70">上一年度完成投资(万元)(不含政府投资代建或成本价移交部分)</view>
+                        <view class="bmi-bottom-th data-v-0ef26e70">项目核准/备案批复文件(上传附件)</view>
+                        <view class="bmi-bottom-th data-v-0ef26e70">开工日期</view>
+                        <view class="bmi-bottom-th data-v-0ef26e70">三函/施工许可证(上传附件)</view>
+                        <view class="bmi-bottom-th data-v-0ef26e70">操作</view>
+                    </view>
+                </view>
+                <view class="bmi-bottom-tbody data-v-0ef26e70" wx:for="{{dataSource}}" wx:key="index">
+                    <view class="bmi-bottom-tr data-v-0ef26e70">
+                        <view class="bmi-bottom-td data-v-0ef26e70" style="overflow-x:scroll;">{{item.projectName}}</view>
+                        <view class="bmi-bottom-td data-v-0ef26e70" style="overflow-x:scroll;">{{item.projectCode}}</view>
+                        <view class="bmi-bottom-td data-v-0ef26e70" style="overflow-x:scroll;">{{item.lastYearInvest}}</view>
+                        <view class="bmi-bottom-td data-v-0ef26e70" style="overflow-x:scroll;">
+                            <my-upload bind:__l="__l" bind:changed="__e" bind:input="__e" class="upload data-v-0ef26e70" data-event-opts="{{[ [ '^changed',[ [ 'imgChange',['$event','investStatisticsPlatProve'] ] ] ],[ '^input',[ [ '__set_model',[ '$0','investStatisticsPlatProve','$event',[] ],[ [ ['dataSource','',index] ] ] ] ] ] ]}}" disabled="{{true}}" text="材料照片" value="{{item.investStatisticsPlatProve}}" vueId="{{'75996bca-1-'+index}}" wx:if="{{item.investStatisticsPlatProve}}"></my-upload>
+                            <block wx:else>点击"编辑"上传</block>
+                        </view>
+                        <view class="bmi-bottom-td data-v-0ef26e70" style="overflow-x:scroll;">{{item.startDate}}</view>
+                        <view class="bmi-bottom-td data-v-0ef26e70" style="overflow-x:scroll;">
+                            <my-upload bind:__l="__l" bind:changed="__e" bind:input="__e" class="upload data-v-0ef26e70" data-event-opts="{{[ [ '^changed',[ [ 'imgChange',['$event','investStatisticsPlatProve'] ] ] ],[ '^input',[ [ '__set_model',[ '$0','builderLicense','$event',[] ],[ [ ['dataSource','',index] ] ] ] ] ] ]}}" disabled="{{true}}" text="材料照片" value="{{item.builderLicense}}" vueId="{{'75996bca-2-'+index}}" wx:if="{{item.builderLicense}}"></my-upload>
+                            <block wx:else>点击"编辑"上传</block>
+                        </view>
+                        <view class="bmi-bottom-td data-v-0ef26e70" style="overflow-x:scroll;display:flex;">
+                            <view bindtap="__e" class="data-v-0ef26e70" data-event-opts="{{[ [ 'tap',[ [ 'handleEdit',['$0',index],[ [ ['dataSource','',index] ] ] ] ] ] ]}}" style="width:50%;">编辑</view>
+                            <view bindtap="__e" class="data-v-0ef26e70" data-event-opts="{{[ [ 'tap',[ [ 'handleDelete',['$0',index],[ [ ['dataSource','',index] ] ] ] ] ] ]}}" style="width:50%;">删除</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <u-button bind:__l="__l" bind:click="__e" class="data-v-0ef26e70" customStyle="width:50%;margin:50rpx auto" data-event-opts="{{[ [ '^click',[ ['show'] ] ] ]}}" icon="plus" plain="{{true}}" text="添加" type="primary" vueId="75996bca-3" wx:if="{{!disabled}}"></u-button>
+    <u-popup bind:__l="__l" bind:close="__e" class="data-v-0ef26e70" data-event-opts="{{[ [ '^close',[ ['close'] ] ] ]}}" show="{{showForm}}" vueId="75996bca-4" vueSlots="{{['default']}}">
+        <view class="data-v-0ef26e70" style="padding:40rpx;">
+            <u--form bind:__l="__l" class="data-v-0ef26e70 vue-ref" data-ref="form" labelPosition="left" labelStyle="{{fontSize:'28rpx',color:'#000'}}" labelWidth="120" model="{{model}}" rules="{{rules}}" vueId="{{'75996bca-5'+','+'75996bca-4'}}" vueSlots="{{['default']}}">
+                <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-0ef26e70" label="项目名称：" prop="projectName" required="{{true}}" vueId="{{'75996bca-6'+','+'75996bca-5'}}" vueSlots="{{['default']}}">
+                    <u--input bind:__l="__l" bind:input="__e" border="none" class="data-v-0ef26e70" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','projectName','$event',[] ],['model'] ] ] ] ]}}" placeholder="请输入" placeholderStyle="color: #666;font-size: 28rpx " value="{{model.projectName}}" vueId="{{'75996bca-7'+','+'75996bca-6'}}"></u--input>
+                </u-form-item>
+                <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-0ef26e70" label="项目代码：" prop="projectCode" required="{{true}}" vueId="{{'75996bca-8'+','+'75996bca-5'}}" vueSlots="{{['default']}}">
+                    <u--input bind:__l="__l" bind:input="__e" border="none" class="data-v-0ef26e70" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','projectCode','$event',[] ],['model'] ] ] ] ]}}" placeholder="请输入" placeholderStyle="color: #666;font-size: 28rpx " value="{{model.projectCode}}" vueId="{{'75996bca-9'+','+'75996bca-8'}}"></u--input>
+                </u-form-item>
+                <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-0ef26e70" label="上一年度完成投资（万元）：" prop="lastYearInvest" required="{{true}}" vueId="{{'75996bca-10'+','+'75996bca-5'}}" vueSlots="{{['default']}}">
+                    <u--input bind:__l="__l" bind:input="__e" border="none" class="data-v-0ef26e70" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','lastYearInvest','$event',[] ],['model'] ] ] ] ]}}" placeholder="请输入" placeholderStyle="color: #666;font-size: 28rpx " type="digit" value="{{model.lastYearInvest}}" vueId="{{'75996bca-11'+','+'75996bca-10'}}"></u--input>
+                </u-form-item>
+                <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-0ef26e70" label="项目核准/备案批复文件：" prop="investStatisticsPlatProve" required="{{true}}" vueId="{{'75996bca-12'+','+'75996bca-5'}}" vueSlots="{{['default']}}">
+                    <my-upload bind:__l="__l" bind:changed="__e" bind:input="__e" class="upload data-v-0ef26e70" data-event-opts="{{[ [ '^changed',[ [ 'imgChange',['$event','investStatisticsPlatProve'] ] ] ],[ '^input',[ [ '__set_model',[ '$0','investStatisticsPlatProve','$event',[] ],['model'] ] ] ] ]}}" text="材料照片" value="{{model.investStatisticsPlatProve}}" vueId="{{'75996bca-13'+','+'75996bca-12'}}"></my-upload>
+                </u-form-item>
+                <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-0ef26e70" label="开工日期：" prop="startDate" required="{{true}}" vueId="{{'75996bca-14'+','+'75996bca-5'}}" vueSlots="{{['default']}}">
+                    <my-date-picker bind:__l="__l" bind:change="__e" bind:input="__e" class="formPicker data-v-0ef26e70" data-event-opts="{{[ [ '^change',[ [ 'choose',['$event','startDate'] ] ] ],[ '^input',[ [ '__set_model',[ '$0','startDate','$event',[] ],['model'] ] ] ] ]}}" value="{{model.startDate}}" vueId="{{'75996bca-15'+','+'75996bca-14'}}"></my-date-picker>
+                </u-form-item>
+                <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-0ef26e70" label="三函/施工许可证：" prop="builderLicense" required="{{true}}" vueId="{{'75996bca-16'+','+'75996bca-5'}}" vueSlots="{{['default']}}">
+                    <my-upload bind:__l="__l" bind:changed="__e" bind:input="__e" class="upload data-v-0ef26e70" data-event-opts="{{[ [ '^changed',[ [ 'imgChange',['$event','builderLicense'] ] ] ],[ '^input',[ [ '__set_model',[ '$0','builderLicense','$event',[] ],['model'] ] ] ] ]}}" text="材料照片" value="{{model.builderLicense}}" vueId="{{'75996bca-17'+','+'75996bca-16'}}"></my-upload>
+                </u-form-item>
+                <u-form-item bind:__l="__l" class="data-v-0ef26e70" vueId="{{'75996bca-18'+','+'75996bca-5'}}" vueSlots="{{['default']}}">
+                    <view class="btns data-v-0ef26e70">
+                        <u-button bind:__l="__l" bind:click="__e" class="data-v-0ef26e70" customStyle="width:45%" data-event-opts="{{[ [ '^click',[ ['close'] ] ] ]}}" text="取消" type="error" vueId="{{'75996bca-19'+','+'75996bca-18'}}"></u-button>
+                        <u-button bind:__l="__l" bind:click="__e" class="data-v-0ef26e70" customStyle="width:45%" data-event-opts="{{[ [ '^click',[ ['handleAdd'] ] ] ]}}" text="确定" type="primary" vueId="{{'75996bca-20'+','+'75996bca-18'}}"></u-button>
+                    </view>
+                </u-form-item>
+            </u--form>
+        </view>
+    </u-popup>
+</view>

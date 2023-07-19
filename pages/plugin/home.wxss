@@ -1,0 +1,38 @@
+.page {
+    height: 100vh;
+}
+
+.cardTitle {
+    color: #fff;
+    font-size: 40rpx;
+    font-weight: 300;
+    padding: 90rpx 60rpx;
+    position: relative;
+    text-shadow: 0 0 6rpx rgba(0,0,0,.3);
+    transform: skew(-10deg,0deg);
+}
+
+.cardTitle::before {
+    border-radius: 20rpx;
+    height: 6rpx;
+    left: 50rpx;
+    top: 60rpx;
+    width: 60rpx;
+}
+
+.cardTitle::after,.cardTitle::before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    transform: skew(10deg,0deg);
+}
+
+.cardTitle::after {
+    border-radius: 6rpx;
+    bottom: 76rpx;
+    height: 24rpx;
+    left: 90rpx;
+    opacity: .1;
+    width: 140rpx;
+}

@@ -1,0 +1,81 @@
+.pages.data-v-05e19e63 {
+    background: #fff;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.pages .top.data-v-05e19e63 {
+    height: 439rpx;
+    margin-bottom: 40rpx;
+    position: relative;
+    width: 100%;
+}
+
+.pages .top .top_label.data-v-05e19e63 {
+    align-items: center;
+    display: flex;
+    height: 104rpx;
+    justify-content: space-between;
+    left: 30rpx;
+    position: absolute;
+    top: 212rpx;
+    width: 94%;
+}
+
+.pages .top .top_label .top_label_left.data-v-05e19e63 {
+    align-items: center;
+    display: flex;
+}
+
+.pages .top .top_label .top_label_left image.data-v-05e19e63 {
+    border-radius: 50%;
+    height: 104rpx;
+    margin-right: 20rpx;
+    width: 104rpx;
+}
+
+.pages .top .top_label .top_label_left .label_right.data-v-05e19e63 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pages .top .top_label .top_label_left .label_right .right_top.data-v-05e19e63 {
+    color: #fff;
+    font-size: 40rpx;
+    font-weight: 700;
+}
+
+.pages .top .top_label .top_label_left .label_right .right_bottom.data-v-05e19e63 {
+    color: #fff;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+
+.pages .top .top_label .top_label_right image.data-v-05e19e63 {
+    height: 104rpx;
+    margin-right: 20rpx;
+    width: 104rpx;
+}
+
+.pages .bottom .unit.data-v-05e19e63 {
+    box-sizing: border-box;
+    display: flex;
+    height: 50rpx;
+    justify-content: space-between;
+    margin-bottom: 40rpx;
+    padding: 10rpx 40rpx;
+    width: 100%;
+}
+
+.pages .bottom .unit .left_cnt.data-v-05e19e63 {
+    display: flex;
+    justify-content: space-between;
+    width: 180rpx;
+}
+
+.pages .bottom .unit .left_cnt .left_cnt_right.data-v-05e19e63 {
+    color: #333;
+    font-size: 30rpx;
+}

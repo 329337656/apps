@@ -1,0 +1,11 @@
+.cu-form-group {
+    padding: 0;
+    width: 100%;
+}
+
+.picker {
+    color: #333;
+    font-size: 32rpx!important;
+    font-weight: 600;
+    text-align: left!important;
+}

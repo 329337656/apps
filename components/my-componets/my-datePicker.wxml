@@ -1,0 +1,9 @@
+<view bindtap="__e" class="cu-form-group data-v-366ce465" data-event-opts="{{[ [ 'tap',[ [ 'showPicker',['$event'] ] ] ] ]}}">
+    <view class="cu-form-group data-v-366ce465">
+        <u--input bind:__l="__l" bind:input="__e" border="none" class="data-v-366ce465" customStyle="background: #fff;" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','date','$event',[] ] ] ] ] ]}}" disabled="{{true}}" placeholder="请选择" placeholderStyle="color: #666;font-size: 28rpx " value="{{date}}" vueId="b9d30430-1"></u--input>
+    </view>
+    <view class="data-v-366ce465" style="float:right;">
+        <u-icon bind:__l="__l" class="data-v-366ce465" name="arrow-right" slot="right" vueId="b9d30430-2"></u-icon>
+        <u-datetime-picker bind:__l="__l" bind:cancel="__e" bind:confirm="__e" bind:input="__e" class="data-v-366ce465" data-event-opts="{{[ [ '^cancel',[ ['e0'] ] ],[ '^confirm',[ ['choose'] ] ],[ '^input',[ [ '__set_model',[ '','real','$event',[] ] ] ] ] ]}}" mode="date" show="{{show}}" value="{{real}}" vueId="b9d30430-3"></u-datetime-picker>
+    </view>
+</view>

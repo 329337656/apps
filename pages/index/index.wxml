@@ -1,0 +1,21 @@
+<view class="data-v-1f646bce">
+    <home bind:__l="__l" class="data-v-1f646bce" vueId="8dd740cc-1" wx:if="{{PageCur=='home'}}"></home>
+    <mine bind:__l="__l" class="data-v-1f646bce" vueId="8dd740cc-2" wx:if="{{PageCur=='mine'}}"></mine>
+    <view class="cu-bar tabbar bg-white shadow foot data-v-1f646bce" style="font-size:24rpx;font-weight:bold;">
+        <view bindtap="__e" class="action flex-direction data-v-1f646bce" data-cur="home" data-event-opts="{{[ [ 'tap',[ [ 'navChange',['$event'] ] ] ] ]}}" style="{{PageCur=='home'?'color: #1067e2':'color: #CCCCCC'}}">
+            <image class="data-v-1f646bce" src="{{PageCur=='home'?'../../static/login/home1.png':'../../static/login/home2.png'}}" style="width:50rpx;height:50rpx;"></image>
+            <view class="data-v-1f646bce" style="margin-top:5rpx;">首页</view>
+        </view>
+        <view bindtap="__e" class="action flex-direction data-v-1f646bce" data-cur="mine" data-event-opts="{{[ [ 'tap',[ [ 'navChange',['$event'] ] ] ] ]}}" style="{{PageCur=='mine'?'color: #1067e2':'color: #CCCCCC'}}">
+            <image class="data-v-1f646bce" src="{{PageCur=='mine'?'../../static/login/person1.png':'../../static/login/person2.png'}}" style="width:50rpx;height:50rpx;"></image>
+            <view class="data-v-1f646bce" style="margin-top:5rpx;">我的</view>
+        </view>
+    </view>
+    <u-popup bind:__l="__l" class="data-v-1f646bce" mode="center" round="{{30}}" show="{{isShowModal}}" vueId="8dd740cc-3" vueSlots="{{['default']}}">
+        <view class="data-v-1f646bce" style="border-radius:30rpx;overflow:hidden;">
+            <view class="bmxq data-v-1f646bce">
+                <view class="data-v-1f646bce" style="font-size:36rpx;font-weight:bold;">{{''+msg+''}}</view>
+            </view>
+        </view>
+    </u-popup>
+</view>

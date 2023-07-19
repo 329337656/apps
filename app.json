@@ -1,0 +1,41 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/home/index",
+        "apply/standard",
+        "apply/zczx",
+        "apply/yhxy",
+        "apply/sqcl",
+        "apply/bllc",
+        "apply/askResult",
+        "apply/askDetail",
+        "apply/result",
+        "apply/askzb",
+        "apply/report",
+        "apply/fill",
+        "apply/personMarital",
+        "apply/socialSecurity",
+        "apply/preview",
+        "apply/transactor",
+        "apply/success",
+        "apply/user/register",
+        "apply/user/myDetail",
+        "apply/user/editPwd",
+        "apply/user/forgetPwd",
+        "apply/user/scan",
+        "apply/user/scanEdit",
+        "apply/user/record"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#0081ff",
+        "navigationBarTitleText": "雄安新区机动车业务办理预约平台",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "black"
+    },
+    "subPackages": [
+        {
+            "root": "apply/"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+.cu-form-group.data-v-3bc66a1c {
+    padding: 0;
+    width: 100%;
+}
+
+.picker.data-v-3bc66a1c {
+    color: #666;
+    font-size: 30rpx;
+    text-align: left!important;
+}
